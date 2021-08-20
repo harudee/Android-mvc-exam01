@@ -86,6 +86,14 @@ public class LoginActivity extends AppCompatActivity implements InitActivity {
                 }
             });
         });
+
+        tvLinkJoin.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    mContext,
+                    JoinActivity.class
+            );
+            startActivity(intent);
+        });
     }
 
     @Override
